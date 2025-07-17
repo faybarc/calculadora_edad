@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de edad</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="calculator">
+        <h2 class="calculator__title">Calculadora de Edad</h2>
+        <div class="calculator__container">
+          <div class="calculator__input-wrapper">
+            <input type="date" id="date-input" class="calculator__input" />
+            <button id="calc-age-btn" class="calculator__button">
+              Calcular
+            </button>
+          </div>
+          <div class="calculator__output-wrapper">
+            <div class="calculator__output-item">
+              <span id="years" class="calculator__output-value">-</span>
+              <p class="calculator__output-label">Years</p>
+            </div>
+            <div class="calculator__output-item">
+              <span id="months" class="calculator__output-value">-</span>
+              <p class="calculator__output-label">Months</p>
+            </div>
+            <div class="calculator__output-item">
+              <span id="days" class="calculator__output-value">-</span>
+              <p class="calculator__output-label">Days</p>
+            </div>
+          </div>
+          <p id="error-message" class="calculator__error"></p>
+        </div>
+      </div>
+
+      <div class="video-player">
+        <video class="video-player__video" autoplay muted loop></video>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
