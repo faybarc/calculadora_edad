@@ -6,11 +6,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Layout principal */
 .layout {
+  flex: 1;
   display: flex;
   flex-direction: row;
-  height: 100vh;
 }
 
 /* Bloque calculator (antes edad__container) */
@@ -164,18 +170,13 @@ input[type="date"]:focus {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: #000;
   color: #fff;
   padding: 20px 0;
   text-align: center;
   border-top: 1px solid #222;
-  /* box-shadow: 0 -1px 10px #ffffff20; */
   user-select: none;
-  z-index: 1000;
+  /* box-shadow: 0 -1px 10px #ffffff20; */
 }
 
 footer:hover {
