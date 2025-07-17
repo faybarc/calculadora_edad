@@ -163,6 +163,25 @@ input[type="date"]:focus {
   object-position: center;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #222;
+  /* box-shadow: 0 -1px 10px #ffffff20; */
+  user-select: none;
+  z-index: 1000;
+}
+
+footer:hover {
+  background-color: #111;
+}
+
 /* Animación */
 .fade-in-scale {
   animation: fadeInScale 0.8s ease-out forwards;
