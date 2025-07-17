@@ -8,6 +8,7 @@ const ageCalculate = () => {
 
   // Validaciones
   if (!dateValue) {
+    displayResult("-", "-", "-");
     error.textContent = "Por favor, ingresa una fecha.";
     resetVideoState();
     return;
